@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Daily UI | Challenge 2 | Credit Card Chekout</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo-03.svg" alt="">
+            </a>
+            <div class="btn">
+                <i class="fa-solid fa-xmark hide"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Tracking</a></li>
+                </ul>
+            </nav>
+            <div class="account">
+                <i class="fa-solid fa-bell"></i>
+                <span></span>
+                <div class="profile-img">
+                    <img src="images/avatar-04.png" alt=""/>
+                </div>
+                <p>Hi, Bouchra</p>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown">
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i><a href="#">my profile</a></li>
+                        <li><i class="fa-solid fa-pen-to-square"></i><a href="#">edit profile</a></li>
+                        <li><i class="fa-solid fa-gear"></i><a href="#">settings</a></li>
+                        <li><i class="fa-solid fa-circle-info"></i><a href="#">help</a></li>
+                        <li><i class="fa-solid fa-right-from-bracket"></i><a href="#">logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="progress-bar">
+        <div class="container">
+            <div class="progress">
+                <div class="prog-numb">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>1</p>
+                </div>
+                <div class="prog-text">
+                    <p>shipping</p>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="progress">
+                <div class="prog-numb">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>2</p>
+                </div>
+                <div class="prog-text">
+                    <p>personnal details</p>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="progress">
+                <div class="prog-numb" style="background-color: black;">
+                    <i class="fa-solid fa-check" style="opacity: 1;"></i>
+                    <p style="opacity: 0;">3</p>
+                </div>
+                <div class="prog-text">
+                    <p>payment</p>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="progress">
+                <div class="prog-numb" style="background-color: #ccc;">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p  style="color: #292929;">4</p>
+                </div>
+                <div class="prog-text">
+                    <p>review</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="payment">
+                <h1>payment</h1>
+                <div class="card">
+                    <h2>card type</h2>
+                    <form action="#" class="card-type">
+                        <div class="type credit">
+                            <input type="radio" name="card" id="credit" value="credit">
+                        <label for="credit">credit card</label>
+                        </div>
+                        <div class="type paypal">
+                            <input type="radio" name="card" id="paypal" value="paypal">
+                        <label for="credit">paypal</label>
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+                <form action="#" class="card-info">
+                    <label for="card-numb">credit card number</label>
+                    <input type="text" name="card-numb" id="card-numb" placeholder="1111-2222-3333-4444" onkeyup="myFunction()" maxlength="19">
+                    <label for="card-name">Name on card</label>
+                    <input type="text" name="card-name" id="card-name" placeholder="Belkacem Bouchra">
+                    <div class="card-coord">
+                        <div>
+                            <label for="exp-date">expire date</label>
+                        <input type="date" name="exp-date" id="exp-date">
+                        </div>
+                        <div>
+                            <label for="cvv">CVV</label>
+                        <input type="password" name="cvv" id="cvv" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="save">
+                        <input type="checkbox" name="save" id="save">
+                        <label for="save">save my informations for later</label>
+                    </div>
+                    <div class="buttons">
+                        <button class="back"><i class="fa-solid fa-arrow-left"></i><a href="#">back</a></button>
+                        <button class="buy"><a href="#">purchase</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="order">
+                <h1>order</h1>
+                <div class="product">
+                    <div class="image">
+                        <img src="images/product 1.webp" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="name">name</h3>
+                        <p class="desc">description</p>
+                        <span class="qte">2</span>
+                        <a href="#">remove</a>
+                        <span class="price">140$</span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="image">
+                        <img src="images/product 2.jfif" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="name">name</h3>
+                        <p class="desc">description</p>
+                        <span class="qte">2</span>
+                        <a href="#">remove</a>
+                        <span class="price">360$</span>
+                    </div>
+                </div>
+                <a href="#">have a discount code ?</a>
+                <ul>
+                    <li><p>subtotal</p><span>500 $</span></li>
+                    <li><p>shipping</p><span>0 $</span></li>
+                    <li><p>total</p><span>500 $</span></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
