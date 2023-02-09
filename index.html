@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Daily UI | Challenge 2 | Credit Card Chekout</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -30,7 +32,7 @@
                 <i class="fa-solid fa-bell"></i>
                 <span></span>
                 <div class="profile-img">
-                    <img src="images/avatar-04.png" alt=""/>
+                    <img src="images/avatar-04.png" alt="" />
                 </div>
                 <p>Hi, Bouchra</p>
                 <i class="fa-solid fa-caret-down"></i>
@@ -82,7 +84,7 @@
             <div class="progress">
                 <div class="prog-numb" style="background-color: #ccc;">
                     <i class="fa-solid fa-circle-check"></i>
-                    <p  style="color: #292929;">4</p>
+                    <p style="color: #292929;">4</p>
                 </div>
                 <div class="prog-text">
                     <p>review</p>
@@ -100,29 +102,30 @@
                     <form action="#" class="card-type">
                         <div class="type credit">
                             <input type="radio" name="card" id="credit" value="credit">
-                        <label for="credit">credit card</label>
+                            <label for="credit">credit card</label>
                         </div>
                         <div class="type paypal">
                             <input type="radio" name="card" id="paypal" value="paypal">
-                        <label for="credit">paypal</label>
+                            <label for="credit">paypal</label>
                         </div>
-                        
-                        
+
+
                     </form>
                 </div>
                 <form action="#" class="card-info">
                     <label for="card-numb">credit card number</label>
-                    <input type="text" name="card-numb" id="card-numb" placeholder="1111-2222-3333-4444" onkeyup="myFunction()" maxlength="19">
+                    <input type="tel" name="card-numb" id="card-numb" placeholder="1111-2222-3333-4444"
+                        onkeyup="myFunction()" maxlength="19">
                     <label for="card-name">Name on card</label>
                     <input type="text" name="card-name" id="card-name" placeholder="Belkacem Bouchra">
                     <div class="card-coord">
                         <div>
                             <label for="exp-date">expire date</label>
-                        <input type="date" name="exp-date" id="exp-date">
+                            <input type="date" name="exp-date" id="exp-date">
                         </div>
                         <div>
                             <label for="cvv">CVV</label>
-                        <input type="password" name="cvv" id="cvv" placeholder="123" maxlength="3">
+                            <input type="password" name="cvv" id="cvv" placeholder="123" maxlength="3">
                         </div>
                     </div>
                     <div class="save">
@@ -163,15 +166,22 @@
                 </div>
                 <a href="#">have a discount code ?</a>
                 <ul>
-                    <li><p>subtotal</p><span>500 $</span></li>
-                    <li><p>shipping</p><span>0 $</span></li>
-                    <li><p>total</p><span>500 $</span></li>
+                    <li>
+                        <p>subtotal</p><span>500 $</span>
+                    </li>
+                    <li>
+                        <p>shipping</p><span>0 $</span>
+                    </li>
+                    <li>
+                        <p>total</p><span>500 $</span>
+                    </li>
                 </ul>
             </div>
         </div>
-        
+
     </div>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
