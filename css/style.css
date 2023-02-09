@@ -454,6 +454,11 @@ header .account {
     justify-content: space-between;
 }
 
+#cvv {
+    -webkit-text-security: disc;
+    text-security: disc;
+}
+
 .save {
     margin: 10px 0;
     display: flex;
